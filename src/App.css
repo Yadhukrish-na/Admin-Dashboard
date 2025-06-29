@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.row-accepted td {
+  background-color: #d4edda !important;
+}
+
+.row-rejected td {
+  background-color: #f8d7da !important;
+}
+
+.row-pending td {
+  background-color: #fff3cd !important;
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-footer {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  padding: 12px 20px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+  transition: 0.2s ease;
+}
+

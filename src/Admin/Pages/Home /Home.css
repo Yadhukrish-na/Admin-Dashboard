@@ -1,0 +1,23 @@
+.home{
+    display: flex;
+    
+}
+.homeContainer{
+    
+    flex:6;
+
+    .widgets,.Subcontainer{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .Subcontainer{
+        padding: 5px 20px;
+
+
+    }
+
+
+
+}

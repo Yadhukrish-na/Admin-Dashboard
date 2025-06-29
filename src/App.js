@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 import './App.css';
+import Sidebar from "./Admin/Components/Sidebar/Sidebar";
+import Navbar from "./Admin/Components/Navbar/Navbar";
+import Home from "./Admin/Pages/Home /Home";
+import Payment from "./Admin/Pages/PaymentStatus/Payment";
+import StoryUploader from "./Admin/Pages/Story/StoryUploader";
+import UserDetail from "./Admin/Pages/components/UserDetails";
+import UserStatusTable from "./Admin/Pages/components/UserStatusTable";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Home/>}></Route>
+    <Route path="/Sidebar" element={<Sidebar/>}></Route>
+    <Route path="/Navbar" element={<Navbar/>}></Route>
+    <Route path="/Pay" element={<Payment/>}></Route>
+    <Route path="/Status" element={<StoryUploader/>}></Route>
+    <Route path="/User" element={<UserDetail/>}></Route>
+    <Route path="/Status" element={<StoryUploader/>}></Route>
+    <Route path="/Table" element={<UserStatusTable/>}></Route>
+   </Routes>
+   </BrowserRouter>
   );
 }
 
