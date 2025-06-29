@@ -13,7 +13,7 @@ function App() {
   return (
    <BrowserRouter>
    <Routes>
-    <Route path="/" element={<Home/>}></Route>
+    <Route path="https://yadhukrish-na.github.io/Admin-Dashboard/" element={<Home/>}></Route>
     <Route path="/Sidebar" element={<Sidebar/>}></Route>
     <Route path="/Navbar" element={<Navbar/>}></Route>
     <Route path="/Pay" element={<Payment/>}></Route>
